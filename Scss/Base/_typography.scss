@@ -1,0 +1,52 @@
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  font-size: 14px;
+  // font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.top_bar {
+  color: grey;
+  font-size: 0.68rem;
+
+  .icon-small {
+    font-size: 1.2em;
+  }
+
+  .chart {
+    font-size: 1.5em;
+  }
+}
+
+a,
+a:link,
+a:visited,
+a:focus,
+a:hover,
+a:active {
+  color: $text-dark-grey;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  color: inherit;
+}
+
+form {
+  font-weight: 400;
+}
+
+.cart_price {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.main_nav {
+  font-size: 0.7rem;
+  font-weight: 500;
+}

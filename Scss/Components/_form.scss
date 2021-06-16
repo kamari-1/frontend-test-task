@@ -1,0 +1,30 @@
+form {
+  display: block;
+  // flex-basis: 100%;
+  position: relative;
+  width: 100%;
+  padding: 0.4rem 0.5rem;
+
+  & > * {
+    display: inline-flex;
+    background: $bg-light-grey;
+  }
+
+  input[type="search"] {
+    width: 100%;
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+  }
+}
+
+// -------------------------------------------------------------
+// ------------------------ Media Query ------------------------
+// -------------------------------------------------------------
+
+// ----- Mobile -----
+@media only screen and(max-width: 481px) {
+  form {
+    display: none;
+  }
+}

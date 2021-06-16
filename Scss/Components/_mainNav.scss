@@ -1,0 +1,43 @@
+// ----- MAIN NAV -----
+.main_nav {
+  .container {
+    padding: 0.2rem 0 1.5rem 0;
+    position: relative;
+    ul {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      overflow-x: scroll;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+
+      li {
+        padding: 0 1rem;
+        display: inline-flex;
+        justify-content: center;
+
+        & + li {
+          padding-left: 0.5rem;
+        }
+
+        &:last-child {
+          border-left: 1px solid rgb(238, 238, 238);
+        }
+
+        a {
+          padding-bottom: 5px;
+
+          &:hover {
+            border-bottom: 2px solid $text-dark-grey;
+          }
+        }
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}

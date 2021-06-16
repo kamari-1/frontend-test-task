@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Test Task</title>
+  </head>
+  <body>
+    <header>
+      <!-- TOP BAR -->
+      <div class="top_bar">
+        <div class="container">
+          <!-- Block 1 -->
+          <div class="top_bar_block">
+            <a href="#">
+              <i class="fas fa-rocket icon-small"></i>
+              &nbsp;Schnelle Lieferung
+            </a>
+          </div>
+          <!-- Block 2 -->
+          <div class="top_bar_block">
+            <a href="#">
+              <div class="ts_ratings">
+                <span class="ts_ratings-stars">
+                  <i class="fa fa-star icon-small" aria-hidden="true"></i>
+                  <i class="fa fa-star icon-small" aria-hidden="true"></i>
+                  <i class="fa fa-star icon-small" aria-hidden="true"></i>
+                  <i class="fa fa-star icon-small" aria-hidden="true"></i>
+                  <i class="fa fa-star icon-small" aria-hidden="true"></i>
+                </span>
+                <span>&nbsp;(4.82)</span>
+                <span>Trusted Shops&nbsp;</span>
+                <span>
+                  <img
+                    class="png"
+                    src="Assets/images/trusted2-comp.png"
+                    alt="trusted logo"
+                  />
+                </span>
+              </div>
+            </a>
+          </div>
+          <!-- Block 3 -->
+
+          <div class="top_bar_block">
+            <a href="#">
+              <!-- <i class="fas fa-rocket"></i> -->
+              <i class="material-icons icon-small chart">stacked_line_chart</i>
+              &nbsp;Faire Preise
+            </a>
+          </div>
+          <!-- Block 4 -->
+          <div class="top_bar_block block-last">
+            <div class="top_bar_block-1">
+              <a href="#">
+                <i
+                  ><img class="de-svg" src="assets/images/de.svg" alt="german"
+                /></i>
+                &nbsp;Deutschland | DE
+              </a>
+            </div>
+            <!-- Block 5 -->
+            <div class="top_bar_block-2" id="service">
+              <a href="#">
+                <i
+                  class="fa fa-question-circle icon-small"
+                  aria-hidden="true"
+                ></i>
+                &nbsp;Service/Hilfe&nbsp;
+                <i class="fa fa-chevron-down icon-small" aria-hidden="true"></i>
+              </a>
+
+              <ul id="service-menu" class="hide">
+                <li><a href="#">Teilnahmebedingungen</a></li>
+                <li><a href="#">Hilfebereich</a></li>
+                <li><a href="#">Impressum</a></li>
+                <li><a href="#">Reklamationen</a></li>
+                <li><a href="#">Widerrufsrecht</a></li>
+                <li><a href="#">AGB</a></li>
+                <li><a href="#">Rücksendungen</a></li>
+                <li><a href="#">Datenschutz</a></li>
+                <li><a href="#">Versandinformationen</a></li>
+                <li><a href="#">Cookie-Einstellungen</a></li>
+                <li><a href="#">Versandstatus</a></li>
+                <li><a href="#">Zahlarten</a></li>
+                <li><a href="#">Kontaktformular</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TOP NAV  -->
+      <div class="top_nav">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="assets/images/koro-logo.svg"
+                alt="koro logo"
+                class="logo-img"
+              />
+            </a>
+          </div>
+          <!-- Top nav ul -->
+          <ul class="top_nav_ul">
+            <li class="top_nav-search" id="form-li">
+              <form id="form">
+                <button type="submit" class="search-btn">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <input
+                  id="search-input"
+                  type="search"
+                  name="search"
+                  aria-label="Suchbegriff..."
+                  class="search-field"
+                  placeholder="Suchbegriff..."
+                />
+                <button type="button" class="close-btn" id="input-clear">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+              </form>
+            </li>
+            <!-- Only mobile -->
+            <li class="top_nav_search-btn btn" id="mobile-search">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </li>
+            <li class="top_nav_times-btn btn" id="mobile-search-close">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </li>
+            <!--  -->
+
+            <li class="top_nav_heart btn">
+              <i class="far fa-heart" aria-hidden="true"></i>
+            </li>
+            <li class="top_nav_account btn">
+              <i class="fa fa-user-alt" aria-hidden="true"></i>
+            </li>
+            <li class="cart btn">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <div class="cart_price">
+                &nbsp;&nbsp;&nbsp;
+                <span class="cart_price-amount">0,00</span>&nbsp;
+                <span class="cart_price-symbol">&#128;</span>
+              </div>
+            </li>
+            <li class="top_nav_account btn menu" id="menu">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- MAIN NAV -->
+      <nav class="main_nav" id="main-nav">
+        <div class="container">
+          <ul class="main_nav_ul" id="main_nav_ul">
+            <li class="main_nav_item"><a href="#">Überblick</a></li>
+            <li class="main_nav_item"><a href="#">Nüsse</a></li>
+            <li class="main_nav_item"><a href="#">Trockenfrüchte</a></li>
+            <li class="main_nav_item"><a href="#">Superfoods</a></li>
+            <li class="main_nav_item"><a href="#">Snacks</a></li>
+            <li class="main_nav_item"><a href="#">Frühstück</a></li>
+            <li class="main_nav_item"><a href="#">Kochen & Backen</a></li>
+            <li class="main_nav_item"><a href="#">Supplements</a></li>
+            <li class="main_nav_item"><a href="#">Getränke</a></li>
+            <li class="main_nav_item"><a href="#">Non-Food</a></li>
+            <li class="main_nav_item"><a href="#">Sale</a></li>
+            <li class="main_nav_item"><a href="#">Food Journal</a></li>
+          </ul>
+
+          <button class="right-paddle paddle" id="paddle">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <script src="script.js"></script>
+  </body>
+</html>

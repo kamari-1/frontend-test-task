@@ -1,0 +1,85 @@
+// ----- TOP BAR -----
+.top_bar {
+  width: 100%;
+  background-color: $bg-light-grey;
+
+  .container {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+
+    .top_bar_block {
+      a:hover {
+        color: $text-dark-grey;
+      }
+    }
+    .block-last {
+      display: inline-flex;
+      justify-content: space-between;
+
+      div + div {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  .png {
+    width: 1.2rem;
+    height: 1.2rem;
+    vertical-align: middle;
+  }
+
+  .de-svg {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  .ts_ratings-stars {
+    color: #f4c20d;
+  }
+
+  .top_bar_block-2 {
+    position: relative;
+    ul {
+      // display: none;
+      list-style: none;
+      // margin: 0;
+      position: absolute;
+      top: 1.7rem;
+      right: 0;
+      padding: 0.7rem;
+      background: white;
+      border-radius: 3px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      z-index: 100;
+
+      li {
+        padding: 0.2rem;
+        color: $text-dark-grey;
+        font-size: 1.05em;
+        font-weight: 400;
+        &:hover {
+          background: $bg-light-grey;
+        }
+      }
+    }
+  }
+}
+
+// -------------------------------------------------------------
+// ------------------------ Media Query ------------------------
+// -------------------------------------------------------------
+
+// ----- Larger Phones -----
+@media only screen and(max-width: 769px) {
+  .top_bar {
+    display: none;
+  }
+}

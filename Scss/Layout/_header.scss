@@ -1,0 +1,39 @@
+header {
+  width: 100%;
+}
+
+.top_bar,
+.top_nav,
+.main_nav {
+  padding: 3px 0;
+  width: 100%;
+}
+
+// Flex items
+.container,
+form,
+.cart {
+  @include flex(row, space-between, center);
+}
+
+// Container
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1160px;
+  padding: 0 1rem;
+}
+
+// Links
+a {
+  cursor: pointer;
+}
+
+// Show / Hide
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

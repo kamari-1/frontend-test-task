@@ -1,0 +1,72 @@
+.btn {
+  font-size: 1.3rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  &:hover {
+    background: $bg-light-grey;
+  }
+}
+
+// search field clear
+.close-btn {
+  position: absolute;
+  cursor: pointer;
+  right: 1rem;
+  visibility: hidden;
+  transition: 0.25s ease visibility;
+  color: $text-dark-grey;
+}
+
+#mobile-search,
+#mobile-search-close {
+  display: none;
+}
+
+// remove search field
+.top_nav_times-btn {
+  color: $text-dark-grey;
+  background: $bg-light-grey;
+  font-weight: 300;
+}
+
+form button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.paddle {
+  display: none;
+  position: absolute;
+  transform: translateY(-20%);
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1.5em;
+  height: 100%;
+  font-size: 1rem;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid rgb(241, 238, 238);
+  outline: none;
+}
+
+// -------------------------------------------------------------
+// ------------------------ Media Query ------------------------
+// -------------------------------------------------------------
+
+// ----- Tablet (smaller) -----
+@media screen and(max-width: 940px) {
+  .paddle {
+    display: block;
+  }
+}
+
+// ----- Larger Phones -----
+@media screen and(max-width: 769px) {
+  .paddle {
+    display: none;
+  }
+}
